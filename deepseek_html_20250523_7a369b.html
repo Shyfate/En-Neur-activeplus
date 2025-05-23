@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FarmAssist - Asistencia Farmacéutica Sostenible</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #2e7d32 0%, #1b5e20 100%);
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+        }
+        
+        .container {
+            width: 85%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 0;
+        }
+        
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+        }
+        
+        h2 {
+            color: #2e7d32;
+            border-bottom: 2px solid #a5d6a7;
+            padding-bottom: 0.5rem;
+            margin-top: 3rem;
+        }
+        
+        .hero {
+            background-color: #e8f5e9;
+            padding: 3rem;
+            border-radius: 8px;
+            text-align: center;
+            margin: 2rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::after {
+            content: "";
+            background: url('https://cdn-icons-png.flaticon.com/512/884/884039.png') no-repeat;
+            opacity: 0.1;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            position: absolute;
+            z-index: 0;
+            background-size: 300px;
+            background-position: right center;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+            margin: 3rem 0;
+        }
+        
+        .feature-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 1.5rem;
+            width: 280px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .feature-card img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 1rem;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: #43a047;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 1rem;
+            transition: background-color 0.3s;
+        }
+        
+        .cta-button:hover {
+            background-color: #2e7d32;
+        }
+        
+        .reforestation {
+            background-color: #e8f5e9;
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 3rem 0;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+        
+        .reforestation img {
+            width: 150px;
+            flex: 1;
+            min-width: 150px;
+        }
+        
+        .reforestation-content {
+            flex: 3;
+            min-width: 300px;
+        }
+        
+        .impact-numbers {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin: 2rem 0;
+            text-align: center;
+        }
+        
+        .impact-number {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            min-width: 200px;
+        }
+        
+        .impact-number h3 {
+            color: #2e7d32;
+            font-size: 2.5rem;
+            margin: 0;
+        }
+        
+        footer {
+            background: linear-gradient(135deg, #1b5e20 0%, #2e7d32 100%);
+            color: white;
+            text-align: center;
+            padding: 3rem 0;
+            margin-top: 3rem;
+        }
+        
+        @media (max-width: 768px) {
+            .features {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .reforestation {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>FarmAssist</h1>
+            <p style="font-size: 1.5rem;">Asistencia Farmacéutica que Siembra Futuro</p>
+        </div>
+    </header>
+    
+    <div class="container">
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Tu Salud, Nuestro Planeta</h2>
+                <p>En <strong>FarmAssist</strong>, no solo cuidamos de tu bienestar. Por cada servicio que utilizas, <strong>contribuimos a reforestar el planeta</strong> y combatir el cambio climático.</p>
+                <img src="https://cdn-icons-png.flaticon.com/512/3659/3659898.png" alt="Energía verde" width="120">
+            </div>
+        </section>
+        
+        <section>
+            <h2>Nuestro Impacto Verde</h2>
+            <div class="features">
+                <div class="feature-card">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2933/2933245.png" alt="Energía eólica">
+                    <h3>Energía 100% Renovable</h3>
+                    <p>Nuestros servidores y centros operan con energía eólica y solar certificada.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <img src="https://cdn-icons-png.flaticon.com/512/4089/4089677.png" alt="Reducción de CO2">
+                    <h3>Reducción de CO₂</h3>
+                    <p>Hemos evitado <strong>15 toneladas de CO₂</strong> en 2024 gracias a la teleasistencia.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3524/3524639.png" alt="Árboles">
+                    <h3>Reforestación Activa</h3>
+                    <p>Destinamos el <strong>5% de nuestras ganancias</strong> a plantar árboles nativos.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="reforestation">
+            <img src="https://cdn-icons-png.flaticon.com/512/2821/2821807.png" alt="Reforestación">
+            <div class="reforestation-content">
+                <h2>Compromiso con los Bosques</h2>
+                <p>En FarmAssist, <strong>el 5% de cada consulta telefónica</strong> se destina directamente a proyectos de reforestación en colaboración con <strong>Bosques Sostenibles España</strong>. Estos árboles ayudan a:</p>
+                <ul>
+                    <li>Recuperar ecosistemas dañados</li>
+                    <li>Absorber CO₂ de la atmósfera</li>
+                    <li>Proteger la biodiversidad local</li>
+                </ul>
+                <a href="#contacto" class="cta-button">Conoce Nuestros Proyectos</a>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Nuestros Logros en 2024</h2>
+            <div class="impact-numbers">
+                <div class="impact-number">
+                    <h3>+850</h3>
+                    <p>Árboles Plantados</p>
+                </div>
+                <div class="impact-number">
+                    <h3>15 t</h3>
+                    <p>CO₂ Compensado</p>
+                </div>
+                <div class="impact-number">
+                    <h3>28,000 kWh</h3>
+                    <p>Energía Limpia</p>
+                </div>
+                <div class="impact-number">
+                    <h3>5%</h3>
+                    <p>Ganancias a Reforestación</p>
+                </div>
+            </div>
+        </section>
+        
+        <section style="text-align: center; margin: 4rem 0;">
+            <h2>¿Cómo Puedes Participar?</h2>
+            <p>Al usar nuestros servicios, ya estás contribuyendo. Pero si quieres hacer más:</p>
+            <a href="#contacto" class="cta-button">Dona Árboles Adicionales</a>
+            <p style="margin-top: 1rem;">O pide información sobre nuestro programa <strong>"Farmacéutico Responsable"</strong>.</p>
+        </section>
+    </div>
+    
+    <footer id="contacto">
+        <div class="container">
+            <img src="https://cdn-icons-png.flaticon.com/512/3670/3670157.png" alt="Logo FarmAssist" width="80" style="margin-bottom: 1rem;">
+            <h3 style="margin: 0; color: #a5d6a7;">FarmAssist</h3>
+            <p>Asistencia farmacéutica comprometida con las personas y el planeta</p>
+            <div style="margin: 1.5rem 0;">
+                <a href="#" style="color: #a5d6a7; margin: 0 10px;">Política de Sostenibilidad</a> | 
+                <a href="#" style="color: #a5d6a7; margin: 0 10px;">Certificaciones</a> |
+                <a href="tel:+123456789" style="color: #a5d6a7; margin: 0 10px;">☎ 912 345 678</a>
+            </div>
+            <p style="font-size: 0.9rem; margin-top: 1.5rem;">© 2024 FarmAssist. Todos los derechos reservados.<br>
+            Colaboramos con: <strong>Bosques Sostenibles España</strong> y <strong>Green Energy Partners</strong></p>
+        </div>
+    </footer>
+</body>
+</html>
